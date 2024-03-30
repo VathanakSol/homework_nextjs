@@ -15,8 +15,9 @@ export default function Service() {
 			.then((res) => res.json())
 			.then((data) => setProducts(data));
 	}, []);
+	
 	return (
-		<div className="h-screen mt-4 container mx-auto grid grid-cols-6 grid-flow-row gap-4">
+		<div className="h-[100vh] w-[100vw] mt-4 container mx-auto grid grid-cols-4 grid-flow-row gap-4 overflow-y-auto scrollbar-track-gray-200">
 			{products.map((product: any, index) => (
 				<CardProduct
 					onClick={() => router.push(`/product/${product.id}`)}

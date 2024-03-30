@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
-      {/* <CardProduct title={""} image={""} price={0} /> */}
+      <p className="flex justify-center w-[100vw]">This is Home Page</p>
     </>
   );
 }

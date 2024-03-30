@@ -12,7 +12,7 @@ export default function CardComponent({
 	description,
 }: PropsType) {
 	return (
-		<Card className="max-w-sm p-4" imgSrc={image} horizontal>
+		<Card className="max-w-sm p-4 h-[50vh]" imgSrc={image} horizontal>
 			<h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
 				{title}
 			</h5>

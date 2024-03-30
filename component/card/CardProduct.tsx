@@ -17,9 +17,11 @@ export default function CardProduct({
 }: PropsType) {
   return (
     <>
-        <div className="flex justify-center ">
-            <Card onClick={onClick} className="max-w-sm cursor-pointer" renderImage={() => (
-                <img src={image} className="h-[200px] w-[60px] flex"/>
+        <div className="flex justify-center">
+            <Card onClick={onClick} className="max-w-sm cursor-pointer flex justify-between" renderImage={() => (
+                <div className="image-container h-[80vh]">                       
+                  <img src={image} className=""/>  
+                </div>
             )}
             >
             <a href="#">

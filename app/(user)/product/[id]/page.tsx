@@ -35,7 +35,7 @@ export async function generateMetadata(
 export default async function Detail(props: Props) {
 	let data = await getData(props.params.id);
 	return (
-		<div className="h-[100vh] grid place-content-center">
+		<div className="h-[50vh] grid place-content-center">
 			<CardComponent
 				title={data?.title || "NoTitle"}
 				description={data?.description || "No Description"}
